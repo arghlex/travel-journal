@@ -1,0 +1,17 @@
+.header {
+    background: #f55a5a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4rem;
+}
+.header i {
+    font-size: 2.4rem;
+}
+.header h1 {
+    text-transform: lowercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0 0 0 .8rem;
+}
