@@ -1,23 +1,23 @@
 import React from "react"
 
-export default function Post (item) {
-
+export default function Post (props) {
+    console.log(props);
     return (
         
         <div className="post">
             <div className="post--img">
-                <img src={item.props.imageUrl} />
+                <img src={props.post.imageUrl} />
             </div>
             <div className="post--content">
                 <p className="post--location">
-                    <span className="post--country"><i className="fa-solid fa-location-dot"></i>{item.props.location}</span> 
-                    <a href={item.props.googleMapsUrl} className="post--gmap">View on Google Maps</a>
+                    <span className="post--country"><i className="fa-solid fa-location-dot"></i>{props.post.location}</span> 
+                    <a href={props.post.googleMapsUrl} className="post--gmap">View on Google Maps</a>
                 </p>
-                <h2 className="post--title">{item.props.title}</h2>
+                <h2 className="post--title">{props.post.title}</h2>
                 <p className="post--date">
-                    <span className="post--date__from">{item.props.startDate}</span> - <span className="post--date__to">{item.props.endDate}</span>
+                    <span className="post--date__from">{props.post.startDate}</span> - <span className="post--date__to">{props.post.endDate}</span>
                 </p>
-                <p className="post--desc">{item.props.description}</p>
+                <p className="post--desc">{props.post.description}</p>
             </div>
         </div>
 

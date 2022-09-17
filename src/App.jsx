@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
 
-    const posts = data.map(item => <Post key={item.title} props={item} />);
+    const posts = data.map(item => <Post key={item.title} post={item} />);
 
   return (
     <div className="App">
